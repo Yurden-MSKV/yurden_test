@@ -21,4 +21,6 @@ from demo import views as demo_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('post/<int:id>/', demo_views.post_detail, name='post_detail'),
+    path('post/new/', demo_views.post_new, name='post_new'),
 ]
